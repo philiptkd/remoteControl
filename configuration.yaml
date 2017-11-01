@@ -1,0 +1,80 @@
+homeassistant:
+  customize:
+    script.dummy_panel:
+      custom_ui_state_card: state-card-button-panel
+      config:
+        columns: 3
+        cell_height: 75px
+        cell_width: 75px
+        entities:
+          - entity: script.xxx
+            caption: Cmd
+            data: {value: Cmd}
+          - entity: script.xxx
+            caption: B1
+            data: {value: B1}
+          - entity: script.xxx
+            caption: B2
+            row_span: 3
+            data: {value: B2}
+          - entity: script.xxx
+            icon: mdi:power
+            column_span: 2
+            row_span: 2
+            data: {value: Power}
+          - entity: script.xxx
+            caption: ^
+            column: 2
+            row: 4
+            data: {value: top}
+          - entity: script.xxx
+            caption: <
+            column: 1
+            row: 5
+            data: {value: left}
+          - entity: script.xxx
+            caption: OK
+            column: 2
+            row: 5
+            data: {value: ok}
+          - entity: script.xxx
+            caption: ">"
+            column: 3
+            row: 5
+            data: {value: right}
+          - entity: script.xxx
+            caption: v
+            column: 2
+            row: 6
+            data: {value: bottom}
+
+http:
+  api_password: !secret http_password
+
+frontend:
+  extra_html_url:
+    - /local/custom_ui/state-card-button-panel.html
+
+script:
+  xxx:
+    sequence:
+      service: python_script.hello_world
+      data_template:
+        value: "{{ value }}"
+  dummy_panel:
+    sequence:
+
+group:
+  panel:
+    name: Button Panel
+    entities:
+      - script.dummy_panel
+
+automation: !include automations.yaml
+
+python_script:
+  
+logger:
+  default: critical
+  logs:
+    homeassistant.components: info
