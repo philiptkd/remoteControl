@@ -1,32 +1,12 @@
-2017-11-01 00:38:50 WARNING (MainThread) [homeassistant.config] Incomplete core configuration. Auto detected latitude: 32.5151, longitude: -92.6262, name: Ruston, time_zone: America/Chicago, elevation: 91
-2017-11-01 00:38:56 INFO (MainThread) [homeassistant.components.http] Serving / to 138.47.55.105 (auth: False)
-2017-11-01 00:39:07 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 138.47.55.105 (auth: False)
-2017-11-01 00:39:07 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 138.47.55.105 (auth: True)
-2017-11-01 00:39:15 INFO (Thread-11) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'Power'}
-2017-11-01 00:39:15 INFO (Thread-11) [homeassistant.components.python_script.hello_world.py] Executing the Power script.
-2017-11-01 00:39:21 INFO (Thread-4) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'B2'}
-2017-11-01 00:39:21 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] Executing the B2 script.
-2017-11-01 00:39:22 INFO (Thread-12) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'B1'}
-2017-11-01 00:39:22 INFO (Thread-12) [homeassistant.components.python_script.hello_world.py] Executing the B1 script.
-2017-11-01 00:39:22 INFO (Thread-7) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'top'}
-2017-11-01 00:39:22 INFO (Thread-7) [homeassistant.components.python_script.hello_world.py] Executing the top script.
-2017-11-01 00:39:23 INFO (Thread-13) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'ok'}
-2017-11-01 00:39:23 INFO (Thread-13) [homeassistant.components.python_script.hello_world.py] Executing the ok script.
-2017-11-01 00:39:23 INFO (Thread-14) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'right'}
-2017-11-01 00:39:23 INFO (Thread-14) [homeassistant.components.python_script.hello_world.py] Executing the right script.
-2017-11-01 00:39:26 INFO (Thread-15) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'B2'}
-2017-11-01 00:39:26 INFO (Thread-15) [homeassistant.components.python_script.hello_world.py] Executing the B2 script.
-2017-11-01 00:39:26 INFO (Thread-8) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'Power'}
-2017-11-01 00:39:26 INFO (Thread-8) [homeassistant.components.python_script.hello_world.py] Executing the Power script.
-2017-11-01 00:39:28 INFO (Thread-5) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'top'}
-2017-11-01 00:39:28 INFO (Thread-5) [homeassistant.components.python_script.hello_world.py] Executing the top script.
-2017-11-01 00:39:28 INFO (Thread-3) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'ok'}
-2017-11-01 00:39:28 INFO (Thread-3) [homeassistant.components.python_script.hello_world.py] Executing the ok script.
-2017-11-01 00:43:12 INFO (Thread-16) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'Cmd'}
-2017-11-01 00:43:12 INFO (Thread-16) [homeassistant.components.python_script.hello_world.py] Executing the Cmd script.
-2017-11-01 00:45:04 INFO (Thread-9) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'Power'}
-2017-11-01 00:45:04 INFO (Thread-9) [homeassistant.components.python_script.hello_world.py] Executing the Power script.
-2017-11-01 00:48:52 INFO (Thread-17) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'Power'}
-2017-11-01 00:48:52 INFO (Thread-17) [homeassistant.components.python_script.hello_world.py] Executing the Power script.
-2017-11-01 00:48:54 INFO (Thread-2) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'B2'}
-2017-11-01 00:48:54 INFO (Thread-2) [homeassistant.components.python_script.hello_world.py] Executing the B2 script.
+2017-11-01 20:19:03 WARNING (MainThread) [homeassistant.config] Incomplete core configuration. Auto detected latitude: 32.5151, longitude: -92.6262, name: Ruston, time_zone: America/Chicago, elevation: 91
+2017-11-01 20:19:09 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.108 (auth: False)
+2017-11-01 20:19:15 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: False)
+2017-11-01 20:19:15 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.108 (auth: True)
+2017-11-01 20:19:18 INFO (Thread-11) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'Power'}
+2017-11-01 20:19:18 INFO (Thread-11) [homeassistant.components.python_script.hello_world.py] Executing the Power script.
+2017-11-01 20:19:18 INFO (Thread-4) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'B2'}
+2017-11-01 20:19:18 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] Executing the B2 script.
+2017-11-01 20:19:19 INFO (Thread-12) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'B1'}
+2017-11-01 20:19:19 INFO (Thread-12) [homeassistant.components.python_script.hello_world.py] Executing the B1 script.
+2017-11-01 20:19:21 INFO (Thread-7) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'top'}
+2017-11-01 20:19:21 INFO (Thread-7) [homeassistant.components.python_script.hello_world.py] Executing the top script.

@@ -1,0 +1,57 @@
+    1: import testing
+    1: import datetime
+    1: from datetime import time
+    1: from datetime import timedelta
+    1: import RPi.GPIO as GPIO
+       
+    2: class TimeReader:
+           #initialize for each new object
+    1:     def __init__(self):
+               self.durations = []  #empty list for signal durations
+               self.lastTime = datetime.datetime.now().time()   #current time
+       
+           #a function to run on a different thread when a change in channel's input value is detected
+    1:     def edgeDetectionCallback(self, channel):
+               self.thisTime = datetime.datetime.now().time()
+       
+               self.lastTimeDelta = timedelta(seconds=self.lastTime.second, microseconds=self.lastTime.microsecond)
+               self.thisTimeDelta = timedelta(seconds=self.thisTime.second, microseconds=self.thisTime.microsecond)
+       
+               self.durations.append((self.thisTimeDelta - self.lastTimeDelta).microseconds)
+               self.lastTime = self.thisTime
+       
+           #prints lengths of time the input signal spends high or low
+           #assumes signal begins as high and disregards first duration
+           #assumes the user holds the button down sufficiently long
+    1:     def printTimes(self):
+               #sets up GPIO pins
+               testing.irSetup()
+       
+               #adds interrupt on input pin changing value
+               GPIO.add_event_detect(15, GPIO.BOTH, callback=self.edgeDetectionCallback)
+       
+               #waits until keyboard interrupt
+               try:
+                   while (len(self.durations) < 51):        #wait until 51 durations are stored
+                       pass
+               except KeyboardInterrupt:
+                   pass
+       
+               #resets GPIO pins to default states
+               GPIO.cleanup()
+               
+               #prints durations of signal. the first value is garbage
+               for i in range(1, len(self.durations)):
+                   print("%d" % (self.durations[i]))
+       
+       
+    1: def __main__():
+           #create a new instance of the TimeReader class.
+           #the __init__ method is called automatically
+           tr = TimeReader()
+       
+           #read and print signal durations
+           tr.printTimes()
+       
+           #instance should be deleted when it goes out of scope
+           

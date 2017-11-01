@@ -12,7 +12,7 @@ def irSetup():
 
 def irClose():
     #resets pin configurations to defaults
-    GPIO.cleanup([15, 16])
+    GPIO.cleanup()
 
 def testSend():
     #setup GPIO pins
