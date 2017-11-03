@@ -1,12 +1,5 @@
-2017-11-01 20:19:03 WARNING (MainThread) [homeassistant.config] Incomplete core configuration. Auto detected latitude: 32.5151, longitude: -92.6262, name: Ruston, time_zone: America/Chicago, elevation: 91
-2017-11-01 20:19:09 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.108 (auth: False)
-2017-11-01 20:19:15 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: False)
-2017-11-01 20:19:15 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.108 (auth: True)
-2017-11-01 20:19:18 INFO (Thread-11) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'Power'}
-2017-11-01 20:19:18 INFO (Thread-11) [homeassistant.components.python_script.hello_world.py] Executing the Power script.
-2017-11-01 20:19:18 INFO (Thread-4) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'B2'}
-2017-11-01 20:19:18 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] Executing the B2 script.
-2017-11-01 20:19:19 INFO (Thread-12) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'B1'}
-2017-11-01 20:19:19 INFO (Thread-12) [homeassistant.components.python_script.hello_world.py] Executing the B1 script.
-2017-11-01 20:19:21 INFO (Thread-7) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'top'}
-2017-11-01 20:19:21 INFO (Thread-7) [homeassistant.components.python_script.hello_world.py] Executing the top script.
+2017-11-03 00:15:28 ERROR (MainThread) [homeassistant.config] Could not detect location information
+2017-11-03 00:15:32 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 138.47.140.93 (auth: False)
+2017-11-03 00:15:34 INFO (MainThread) [homeassistant.components.http] Serving / to 138.47.140.93 (auth: False)
+2017-11-03 00:15:42 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 138.47.140.93 (auth: False)
+2017-11-03 00:15:42 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 138.47.140.93 (auth: True)

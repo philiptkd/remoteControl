@@ -69,10 +69,16 @@ group:
     name: Button Panel
     entities:
       - script.dummy_panel
+  panel2:
+    name: Other Panel
+    entities:
+      - script.dummy_panel
 
 automation: !include automations.yaml
 
 python_script:
+
+hello_state:
   
 logger:
   default: critical
