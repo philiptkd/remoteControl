@@ -47,6 +47,16 @@ homeassistant:
             column: 2
             row: 6
             data: {value: bottom}
+    script.add_remote:
+      custom_ui_state_card: state-card-button-panel
+      config:
+        columns: 1
+        cell_height: 75px
+        cell_width: 460px
+        entities:
+          - entity: script.xxx
+            caption: Add Device
+            data: {value: unused}
 
 http:
 #  api_password: !secret http_password
@@ -68,13 +78,15 @@ script:
       service: python_script.print
       data_template:
         value: "{{ value }}"
+  add_remote:
+    sequence:
 
 group:
   default_view:
     view: yes
-    name: Home Button Panel
+    name: Device Page
     entities:
-      - script.dummy_panel
+      - script.add_remote
 
 automation: !include automations.yaml
 
