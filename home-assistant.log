@@ -1,5 +1,5 @@
-2017-11-03 00:15:28 ERROR (MainThread) [homeassistant.config] Could not detect location information
-2017-11-03 00:15:32 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 138.47.140.93 (auth: False)
-2017-11-03 00:15:34 INFO (MainThread) [homeassistant.components.http] Serving / to 138.47.140.93 (auth: False)
-2017-11-03 00:15:42 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 138.47.140.93 (auth: False)
-2017-11-03 00:15:42 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 138.47.140.93 (auth: True)
+2017-11-03 17:34:37 WARNING (MainThread) [homeassistant.config] Incomplete core configuration. Auto detected latitude: 32.5151, longitude: -92.6262, name: Ruston, time_zone: America/Chicago, elevation: 91
+2017-11-03 17:34:41 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: False)
+2017-11-03 17:34:42 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.108 (auth: False)
+2017-11-03 17:34:49 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: False)
+2017-11-03 17:34:49 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.108 (auth: True)
