@@ -1,5 +1,12 @@
-2017-11-03 17:34:37 WARNING (MainThread) [homeassistant.config] Incomplete core configuration. Auto detected latitude: 32.5151, longitude: -92.6262, name: Ruston, time_zone: America/Chicago, elevation: 91
-2017-11-03 17:34:41 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: False)
-2017-11-03 17:34:42 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.108 (auth: False)
-2017-11-03 17:34:49 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: False)
-2017-11-03 17:34:49 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.108 (auth: True)
+2017-11-03 20:03:20 WARNING (MainThread) [homeassistant.config] Incomplete core configuration. Auto detected latitude: 32.5151, longitude: -92.6262, name: Ruston, time_zone: America/Chicago, elevation: 91
+2017-11-03 20:03:25 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
+2017-11-03 20:03:25 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
+2017-11-03 20:03:26 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.108 (auth: True)
+2017-11-03 20:03:26 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
+2017-11-03 20:03:28 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.108 (auth: True)
+2017-11-03 20:03:35 INFO (Thread-11) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'Power'}
+2017-11-03 20:03:35 INFO (Thread-11) [homeassistant.components.python_script.hello_world.py] Executing the Power script.
+2017-11-03 20:03:39 INFO (Thread-12) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'right'}
+2017-11-03 20:03:39 INFO (Thread-12) [homeassistant.components.python_script.hello_world.py] Executing the right script.
+2017-11-03 20:03:49 INFO (Thread-7) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'B2'}
+2017-11-03 20:03:49 INFO (Thread-7) [homeassistant.components.python_script.hello_world.py] Executing the B2 script.

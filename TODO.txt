@@ -1,0 +1,10 @@
+TODO
+
+read homeassistant API
+
+create remote entity in new view with unique entity_ID on button press
+create button entity on button press
+
+
+port python script for reading IR to HA python
+

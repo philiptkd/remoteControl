@@ -7,7 +7,7 @@ homeassistant:
         cell_height: 75px
         cell_width: 75px
         entities:
-          - entity: script.xxx
+          - entity: script.print_attributes
             caption: Cmd
             data: {value: Cmd}
           - entity: script.xxx
@@ -49,7 +49,7 @@ homeassistant:
             data: {value: bottom}
 
 http:
-  api_password: !secret http_password
+#  api_password: !secret http_password
 
 frontend:
   extra_html_url:
@@ -63,14 +63,15 @@ script:
         value: "{{ value }}"
   dummy_panel:
     sequence:
+  print_attributes:
+    sequence:
+      service: python_script.print
+      data_template:
+        value: "{{ value }}"
 
 group:
   panel:
     name: Button Panel
-    entities:
-      - script.dummy_panel
-  panel2:
-    name: Other Panel
     entities:
       - script.dummy_panel
 
