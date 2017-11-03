@@ -83,6 +83,6 @@ python_script:
 hello_state:
   
 logger:
-  default: critical
-  logs:
-    homeassistant.components: info
+#  default: critical
+#  logs:
+#    homeassistant.components: info

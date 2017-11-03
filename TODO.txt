@@ -2,7 +2,7 @@ TODO
 
 read homeassistant API
 
-create remote entity in new view with unique entity_ID on button press
+delete remote view by selecting from a dropdown list or clicking delete button on that view
 create button entity on button press
 
 
