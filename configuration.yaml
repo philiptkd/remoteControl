@@ -70,8 +70,9 @@ script:
         value: "{{ value }}"
 
 group:
-  panel:
-    name: Button Panel
+  default_view:
+    view: yes
+    name: Home Button Panel
     entities:
       - script.dummy_panel
 

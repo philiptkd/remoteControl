@@ -1,0 +1,7 @@
+
+value = data.get('value')
+hass.states.set('group.panel3', value
+logger.info("Executing the {0} script.".format(value))
+hass.bus.fire(value, { "wow": "from a Python script!" })
+
+
