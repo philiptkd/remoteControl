@@ -1,16 +1,23 @@
-2017-11-04 19:44:29 WARNING (MainThread) [homeassistant.config] Incomplete core configuration. Auto detected latitude: 32.5151, longitude: -92.6262, name: Ruston, time_zone: America/Chicago, elevation: 91
-2017-11-04 19:44:34 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.107 (auth: True)
-2017-11-04 19:44:34 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
-2017-11-04 19:44:34 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
-2017-11-04 19:44:34 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
-2017-11-04 19:44:34 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
-2017-11-04 19:44:35 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
-2017-11-04 19:44:35 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.108 (auth: True)
-2017-11-04 19:44:35 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
-2017-11-04 19:44:37 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.108 (auth: True)
-2017-11-04 19:44:40 INFO (Thread-4) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 19:44:40 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] ['group.default_view', 'group.add_signal', 'group.all_scripts']
-2017-11-04 19:44:40 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] remote0
-2017-11-04 19:44:40 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-04 19:45:02 INFO (Thread-12) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote0'}
-2017-11-04 19:45:02 INFO (Thread-12) [homeassistant.components.python_script.delete.py] remote0
+2017-11-04 19:59:32 WARNING (MainThread) [homeassistant.config] Incomplete core configuration. Auto detected latitude: 32.5151, longitude: -92.6262, name: Ruston, time_zone: America/Chicago, elevation: 91
+2017-11-04 19:59:36 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.107 (auth: True)
+2017-11-04 19:59:38 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.108 (auth: True)
+2017-11-04 19:59:38 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
+2017-11-04 19:59:40 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.108 (auth: True)
+2017-11-04 19:59:50 INFO (Thread-11) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
+2017-11-04 19:59:50 INFO (Thread-11) [homeassistant.components.python_script.hello_world.py] ['group.delete_device', 'group.all_scripts', 'group.add_signal', 'group.default_view', 'group.add_device']
+2017-11-04 19:59:50 INFO (Thread-11) [homeassistant.components.python_script.hello_world.py] remote0
+2017-11-04 19:59:50 INFO (Thread-11) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
+2017-11-04 19:59:53 INFO (Thread-12) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote0'}
+2017-11-04 19:59:54 INFO (Thread-12) [homeassistant.components.python_script.delete.py] remote0
+2017-11-04 19:59:59 INFO (Thread-7) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
+2017-11-04 19:59:59 INFO (Thread-7) [homeassistant.components.python_script.hello_world.py] ['group.delete_device', 'group.all_scripts', 'group.add_signal', 'group.default_view', 'group.add_device']
+2017-11-04 19:59:59 INFO (Thread-7) [homeassistant.components.python_script.hello_world.py] djndf
+2017-11-04 19:59:59 INFO (Thread-7) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
+2017-11-04 20:00:02 INFO (Thread-3) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
+2017-11-04 20:00:02 INFO (Thread-3) [homeassistant.components.python_script.hello_world.py] ['group.delete_device', 'group.all_scripts', 'group.add_signal', 'group.djndf', 'group.default_view', 'group.add_device']
+2017-11-04 20:00:02 INFO (Thread-3) [homeassistant.components.python_script.hello_world.py] ebfag
+2017-11-04 20:00:02 INFO (Thread-3) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
+2017-11-04 20:00:06 INFO (Thread-13) [homeassistant.components.python_script] Executing delete.py: {'value': 'djndf'}
+2017-11-04 20:00:06 INFO (Thread-13) [homeassistant.components.python_script.delete.py] djndf
+2017-11-04 20:00:11 INFO (Thread-14) [homeassistant.components.python_script] Executing delete.py: {'value': 'ebfag'}
+2017-11-04 20:00:11 INFO (Thread-14) [homeassistant.components.python_script.delete.py] ebfag

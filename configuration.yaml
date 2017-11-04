@@ -132,19 +132,27 @@ input_text:
     pattern: '[a-zA-Z0-9]*'
 
 group:
-  default_view:
-    view: yes
-    name: Device Page
-    entities:
-      - input_text.add_device_name
-      - script.add_device_button
-      - input_select.delete_device_select
-      - script.delete_device_button
   add_signal:
     name: Add Signal
     entities:
       - input_text.add_signal_name
       - script.add_signal_button
+  add_device:
+    name: Add Device
+    entities:
+      - input_text.add_device_name
+      - script.add_device_button
+  delete_device:
+    name: Delete Device
+    entities:
+      - input_select.delete_device_select
+      - script.delete_device_button
+  default_view:
+    view: yes
+    name: Device Page
+    entities:
+      - group.add_device
+      - group.delete_device
 
 automation:
 
