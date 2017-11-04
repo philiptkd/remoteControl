@@ -104,11 +104,18 @@ input_select:
     options:
       - "Select Device to Delete"
 
+input_text:
+  add_device_name:
+    name: New Device Name
+    initial: remote0
+    pattern: '[a-zA-Z0-9]*'
+
 group:
   default_view:
     view: yes
     name: Device Page
     entities:
+      - input_text.add_device_name
       - script.add_device_button
       - input_select.delete_device_select
       - script.delete_device_button

@@ -1,36 +1,32 @@
-2017-11-04 05:16:36 WARNING (MainThread) [homeassistant.config] Incomplete core configuration. Auto detected latitude: 32.5151, longitude: -92.6262, name: Ruston, time_zone: America/Chicago, elevation: 91
-2017-11-04 05:16:42 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.108 (auth: True)
-2017-11-04 05:16:42 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
-2017-11-04 05:16:45 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.108 (auth: True)
-2017-11-04 05:16:49 INFO (Thread-4) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 05:16:49 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-04 05:16:49 INFO (Thread-12) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 05:16:49 INFO (Thread-12) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-04 05:16:50 INFO (Thread-7) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 05:16:50 INFO (Thread-7) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-04 05:16:59 INFO (Thread-3) [homeassistant.components.python_script] Executing delete.py: {'value': 'Select Device to Delete'}
-2017-11-04 05:16:59 INFO (Thread-3) [homeassistant.components.python_script.delete.py] Select Device to Delete
-2017-11-04 05:17:08 INFO (Thread-13) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote0'}
-2017-11-04 05:17:08 INFO (Thread-13) [homeassistant.components.python_script.delete.py] remote0
-2017-11-04 05:17:14 INFO (Thread-14) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 05:17:14 INFO (Thread-14) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-04 05:17:22 INFO (Thread-15) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote0'}
-2017-11-04 05:17:22 INFO (Thread-15) [homeassistant.components.python_script.delete.py] remote0
-2017-11-04 05:17:26 INFO (Thread-2) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote2'}
-2017-11-04 05:17:26 INFO (Thread-2) [homeassistant.components.python_script.delete.py] remote2
-2017-11-04 05:17:33 INFO (Thread-16) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote1'}
-2017-11-04 05:17:33 INFO (Thread-16) [homeassistant.components.python_script.delete.py] remote1
-2017-11-04 05:18:32 INFO (Thread-9) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 05:18:32 INFO (Thread-9) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-04 05:18:33 INFO (Thread-8) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 05:18:33 INFO (Thread-8) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-04 05:18:34 INFO (Thread-17) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 05:18:34 INFO (Thread-17) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-04 05:18:43 INFO (Thread-10) [homeassistant.components.python_script] Executing delete.py: {'value': 'Select Device to Delete'}
-2017-11-04 05:18:43 INFO (Thread-10) [homeassistant.components.python_script.delete.py] Select Device to Delete
-2017-11-04 05:18:47 INFO (Thread-18) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote2'}
-2017-11-04 05:18:47 INFO (Thread-18) [homeassistant.components.python_script.delete.py] remote2
-2017-11-04 05:18:51 INFO (Thread-5) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote1'}
-2017-11-04 05:18:51 INFO (Thread-5) [homeassistant.components.python_script.delete.py] remote1
-2017-11-04 05:18:54 INFO (Thread-6) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote0'}
-2017-11-04 05:18:54 INFO (Thread-6) [homeassistant.components.python_script.delete.py] remote0
+2017-11-04 18:07:46 WARNING (MainThread) [homeassistant.config] Incomplete core configuration. Auto detected latitude: 32.5151, longitude: -92.6262, name: Ruston, time_zone: America/Chicago, elevation: 91
+2017-11-04 18:07:52 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.108 (auth: True)
+2017-11-04 18:07:52 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
+2017-11-04 18:07:54 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.108 (auth: True)
+2017-11-04 18:07:59 INFO (Thread-11) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
+2017-11-04 18:07:59 INFO (Thread-11) [homeassistant.components.python_script.hello_world.py] ['group.all_scripts', 'group.default_view']
+2017-11-04 18:07:59 INFO (Thread-11) [homeassistant.components.python_script.hello_world.py] remote0
+2017-11-04 18:07:59 INFO (Thread-11) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
+2017-11-04 18:08:06 INFO (Thread-12) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
+2017-11-04 18:08:06 INFO (Thread-12) [homeassistant.components.python_script.hello_world.py] ['group.all_scripts', 'group.default_view', 'group.remote0']
+2017-11-04 18:08:06 INFO (Thread-12) [homeassistant.components.python_script.hello_world.py] remote0
+2017-11-04 18:08:06 INFO (Thread-12) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
+2017-11-04 18:08:09 INFO (Thread-7) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
+2017-11-04 18:08:09 INFO (Thread-7) [homeassistant.components.python_script.hello_world.py] ['group.all_scripts', 'group.default_view', 'group.remote0']
+2017-11-04 18:08:09 INFO (Thread-7) [homeassistant.components.python_script.hello_world.py] remote1
+2017-11-04 18:08:09 INFO (Thread-7) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
+2017-11-04 18:08:16 INFO (Thread-13) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
+2017-11-04 18:08:16 INFO (Thread-13) [homeassistant.components.python_script.hello_world.py] ['group.remote0', 'group.all_scripts', 'group.remote1', 'group.default_view']
+2017-11-04 18:08:16 INFO (Thread-13) [homeassistant.components.python_script.hello_world.py] remote2
+2017-11-04 18:08:16 INFO (Thread-13) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
+2017-11-04 18:08:23 INFO (Thread-8) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
+2017-11-04 18:08:23 INFO (Thread-8) [homeassistant.components.python_script.hello_world.py] ['group.remote0', 'group.all_scripts', 'group.remote1', 'group.remote2', 'group.default_view']
+2017-11-04 18:08:23 INFO (Thread-8) [homeassistant.components.python_script.hello_world.py] remashds
+2017-11-04 18:08:23 INFO (Thread-8) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
+2017-11-04 18:08:27 INFO (Thread-14) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote2'}
+2017-11-04 18:08:27 INFO (Thread-14) [homeassistant.components.python_script.delete.py] remote2
+2017-11-04 18:08:32 INFO (Thread-15) [homeassistant.components.python_script] Executing delete.py: {'value': 'remashds'}
+2017-11-04 18:08:32 INFO (Thread-15) [homeassistant.components.python_script.delete.py] remashds
+2017-11-04 18:08:35 INFO (Thread-5) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote1'}
+2017-11-04 18:08:35 INFO (Thread-5) [homeassistant.components.python_script.delete.py] remote1
+2017-11-04 18:08:38 INFO (Thread-16) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote0'}
+2017-11-04 18:08:38 INFO (Thread-16) [homeassistant.components.python_script.delete.py] remote0

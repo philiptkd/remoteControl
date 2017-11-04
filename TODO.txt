@@ -2,9 +2,10 @@ TODO
 
 read homeassistant API
 
-delete remote view by selecting from a dropdown list or clicking delete button on that view
-create button entity on button press
+name remote devices with an Input Text
 
+create button/signal entity with Input Text and button
+delete buttons with Input Select and button
 
 port python script for reading IR to HA python
 
