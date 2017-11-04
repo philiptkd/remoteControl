@@ -81,14 +81,30 @@ script:
   add_remote:
     sequence:
 
+input_select:
+  delete_device:
+    name: Delete Device
+    options:
+      - "Select Device to Delete"
+      - "option 2"
+
 group:
   default_view:
     view: yes
     name: Device Page
     entities:
       - script.add_remote
+      - input_select.delete_device
 
-automation: !include automations.yaml
+automation:
+  - alias: Print Stuff
+    trigger:
+      platform: state
+      entity_id: input_select.delete_device
+    action:
+      service: python_script.print
+      data_template:
+        value: '{{ states.input_select.delete_device.state }}'
 
 python_script:
 
