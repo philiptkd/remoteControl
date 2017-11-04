@@ -1,3 +1,7 @@
+#TODO
+#list is not updating
+#maybe because updating select_list attributes without updating state doesn't update the list
+
 #get list of group entity IDs
 group_id_list = hass.states.entity_ids(domain_filter='group')
 
@@ -19,8 +23,7 @@ state = hass.states.get('input_select.delete_device')
 attributes = state.attributes
 attributes['options'].append(entity_id)
 
-#convert newAttributes to dict
-hass.states.set('input_select.delete_device','Select Device to Delete', attributes=attributes)
+hass.states.set('input_select.delete_device', 'Select Device to Delete', attributes=attributes)
 
 #print to logger
 logger.info("Executing the {0} script.".format(value))

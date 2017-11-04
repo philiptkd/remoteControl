@@ -86,7 +86,7 @@ input_select:
     name: Delete Device
     options:
       - "Select Device to Delete"
-      - "option 2"
+      - "none"
 
 group:
   default_view:
