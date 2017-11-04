@@ -47,7 +47,7 @@ homeassistant:
             column: 2
             row: 6
             data: {value: bottom}
-    script.add_remote:
+    script.add_device_button:
       custom_ui_state_card: state-card-button-panel
       config:
         columns: 1
@@ -56,7 +56,17 @@ homeassistant:
         entities:
           - entity: script.xxx
             caption: Add Device
-            data: {value: unused}
+            data: {value: add_device}
+    script.delete_device_button:
+      custom_ui_state_card: state-card-button-panel
+      config:
+        columns: 1
+        cell_height: 75px
+        cell_width: 460px
+        entities:
+          - entity: script.delete_device
+            caption: Delete Device
+            data: {value: delete_device}
 
 http:
 #  api_password: !secret http_password
@@ -78,12 +88,19 @@ script:
       service: python_script.print
       data_template:
         value: "{{ value }}"
-  add_remote:
+  add_device_button:
     sequence:
+  delete_device_button:
+    sequence:
+  delete_device:
+    sequence:
+      service: python_script.delete
+      data_template:
+        value: '{{ states.input_select.delete_device_select.state }}'
 
 input_select:
-  delete_device:
-    name: Delete Device
+  delete_device_select:
+    name: Devices
     options:
       - "Select Device to Delete"
 
@@ -92,24 +109,17 @@ group:
     view: yes
     name: Device Page
     entities:
-      - script.add_remote
-      - input_select.delete_device
+      - script.add_device_button
+      - input_select.delete_device_select
+      - script.delete_device_button
 
 automation:
-  - alias: Print Stuff
-    trigger:
-      platform: state
-      entity_id: input_select.delete_device
-    action:
-      service: python_script.print
-      data_template:
-        value: '{{ states.input_select.delete_device.state }}'
 
 python_script:
 
 hello_state:
   
 logger:
-#  default: critical
-#  logs:
-#    homeassistant.components: info
+  default: critical
+  logs:
+    homeassistant.components: info

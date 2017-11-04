@@ -15,11 +15,14 @@ panelAttributes = {'entity_id': ('script.dummy_panel',), 'view': 'yes'}
 hass.states.set('group.'+entity_id,'hello', attributes=panelAttributes)
 
 #add option input select for deleting devices
-state = hass.states.get('input_select.delete_device_select')
+state = hass.states.get('input_select.delete_device')
 attributes = state.attributes
-attributes['options'].append(entity_id)
+options_list = attributes['options']
+newAttributes = "{"friendly_name': 'Delete Device', 'options': "
+options_list.append(entity_id)
+newAttributes = newAttributes + str(options_list) + "}"
 
-hass.states.set('input_select.delete_device_select', state.state, attributes=attributes, force_update=True)
+hass.states.set('input_select.delete_device','Select Device to Delete', attributes=newAttributes)
 
 #print to logger
 logger.info("Executing the {0} script.".format(value))
