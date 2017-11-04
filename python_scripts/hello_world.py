@@ -22,7 +22,7 @@ logger.info(entity_id)
 if('group.' + entity_id not in group_id_list):
     #create remote(script.dummy_panel) entity on button press
     #panelAttributes = {'entity_id': ('script.dummy_panel',), 'view': 'yes'}
-    panelAttributes = {'entity_id': 'group.'+entity_id, 'entities': ['script.'+entity_id], 'view': 'yes'}
+    panelAttributes = {'entity_id': ['script.'+entity_id, 'group.add_signal'], 'view': 'yes'}
     hass.states.set('group.'+entity_id,'hello', attributes=panelAttributes)
 
     #add option input select for deleting devices
