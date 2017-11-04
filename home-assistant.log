@@ -1,32 +1,36 @@
-2017-11-04 18:07:46 WARNING (MainThread) [homeassistant.config] Incomplete core configuration. Auto detected latitude: 32.5151, longitude: -92.6262, name: Ruston, time_zone: America/Chicago, elevation: 91
-2017-11-04 18:07:52 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.108 (auth: True)
-2017-11-04 18:07:52 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
-2017-11-04 18:07:54 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.108 (auth: True)
-2017-11-04 18:07:59 INFO (Thread-11) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 18:07:59 INFO (Thread-11) [homeassistant.components.python_script.hello_world.py] ['group.all_scripts', 'group.default_view']
-2017-11-04 18:07:59 INFO (Thread-11) [homeassistant.components.python_script.hello_world.py] remote0
-2017-11-04 18:07:59 INFO (Thread-11) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-04 18:08:06 INFO (Thread-12) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 18:08:06 INFO (Thread-12) [homeassistant.components.python_script.hello_world.py] ['group.all_scripts', 'group.default_view', 'group.remote0']
-2017-11-04 18:08:06 INFO (Thread-12) [homeassistant.components.python_script.hello_world.py] remote0
-2017-11-04 18:08:06 INFO (Thread-12) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-04 18:08:09 INFO (Thread-7) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 18:08:09 INFO (Thread-7) [homeassistant.components.python_script.hello_world.py] ['group.all_scripts', 'group.default_view', 'group.remote0']
-2017-11-04 18:08:09 INFO (Thread-7) [homeassistant.components.python_script.hello_world.py] remote1
-2017-11-04 18:08:09 INFO (Thread-7) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-04 18:08:16 INFO (Thread-13) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 18:08:16 INFO (Thread-13) [homeassistant.components.python_script.hello_world.py] ['group.remote0', 'group.all_scripts', 'group.remote1', 'group.default_view']
-2017-11-04 18:08:16 INFO (Thread-13) [homeassistant.components.python_script.hello_world.py] remote2
-2017-11-04 18:08:16 INFO (Thread-13) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-04 18:08:23 INFO (Thread-8) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 18:08:23 INFO (Thread-8) [homeassistant.components.python_script.hello_world.py] ['group.remote0', 'group.all_scripts', 'group.remote1', 'group.remote2', 'group.default_view']
-2017-11-04 18:08:23 INFO (Thread-8) [homeassistant.components.python_script.hello_world.py] remashds
-2017-11-04 18:08:23 INFO (Thread-8) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-04 18:08:27 INFO (Thread-14) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote2'}
-2017-11-04 18:08:27 INFO (Thread-14) [homeassistant.components.python_script.delete.py] remote2
-2017-11-04 18:08:32 INFO (Thread-15) [homeassistant.components.python_script] Executing delete.py: {'value': 'remashds'}
-2017-11-04 18:08:32 INFO (Thread-15) [homeassistant.components.python_script.delete.py] remashds
-2017-11-04 18:08:35 INFO (Thread-5) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote1'}
-2017-11-04 18:08:35 INFO (Thread-5) [homeassistant.components.python_script.delete.py] remote1
-2017-11-04 18:08:38 INFO (Thread-16) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote0'}
-2017-11-04 18:08:38 INFO (Thread-16) [homeassistant.components.python_script.delete.py] remote0
+2017-11-04 18:46:48 WARNING (MainThread) [homeassistant.config] Incomplete core configuration. Auto detected latitude: 32.5151, longitude: -92.6262, name: Ruston, time_zone: America/Chicago, elevation: 91
+2017-11-04 18:46:51 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
+2017-11-04 18:46:53 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.108 (auth: True)
+2017-11-04 18:46:53 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
+2017-11-04 18:46:55 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.108 (auth: True)
+2017-11-04 18:46:57 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
+2017-11-04 18:46:58 INFO (Thread-4) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
+2017-11-04 18:46:58 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] ['group.all_scripts', 'group.default_view']
+2017-11-04 18:46:58 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] remote0
+2017-11-04 18:46:58 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
+2017-11-04 18:47:34 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.107 (auth: True)
+2017-11-04 18:47:34 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.107 (auth: True)
+2017-11-04 18:47:37 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.107 (auth: True)
+2017-11-04 18:47:47 INFO (MainThread) [homeassistant.components.http] Serving /states/group.remote0 to 192.168.0.107 (auth: True)
+2017-11-04 18:47:47 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.107 (auth: True)
+2017-11-04 18:47:49 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.107 (auth: True)
+2017-11-04 18:48:00 INFO (MainThread) [homeassistant.components.http] Serving /states/group.remote0 to 192.168.0.107 (auth: True)
+2017-11-04 18:48:00 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.107 (auth: True)
+2017-11-04 18:48:00 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.107 (auth: True)
+2017-11-04 18:48:02 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.107 (auth: True)
+2017-11-04 18:48:06 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.107 (auth: True)
+2017-11-04 18:48:16 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.107 (auth: True)
+2017-11-04 18:48:16 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.107 (auth: True)
+2017-11-04 18:48:19 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.107 (auth: True)
+2017-11-04 18:48:25 INFO (Thread-14) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote0'}
+2017-11-04 18:48:25 INFO (Thread-14) [homeassistant.components.python_script.delete.py] remote0
+2017-11-04 18:48:31 INFO (Thread-15) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
+2017-11-04 18:48:31 INFO (Thread-15) [homeassistant.components.python_script.hello_world.py] ['group.all_scripts', 'group.default_view']
+2017-11-04 18:48:31 INFO (Thread-15) [homeassistant.components.python_script.hello_world.py] remote0
+2017-11-04 18:48:31 INFO (Thread-15) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
+2017-11-04 18:48:40 INFO (Thread-2) [homeassistant.components.python_script] Executing delete.py: {'value': 'remote0'}
+2017-11-04 18:48:40 INFO (Thread-2) [homeassistant.components.python_script.delete.py] remote0
+2017-11-04 18:49:09 INFO (Thread-16) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
+2017-11-04 18:49:09 INFO (Thread-16) [homeassistant.components.python_script.hello_world.py] ['group.all_scripts', 'group.default_view']
+2017-11-04 18:49:09 INFO (Thread-16) [homeassistant.components.python_script.hello_world.py] remote0
+2017-11-04 18:49:09 INFO (Thread-16) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
