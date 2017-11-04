@@ -1,3 +1,5 @@
-buffer_state = hass.states.get('script.xxx')
+value1 = data.get('value1')
+value2 = data.get('value2')
 
-buffer_state.attributes['friendly_name']='other'
+logger.info('Printing from the test service.')
+logger.info(str(value1) + ' ' +  str(value2))

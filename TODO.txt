@@ -2,9 +2,10 @@ TODO
 
 read homeassistant API
 
-name remote devices with an Input Text
-
 create button/signal entity with Input Text and button
+	be sure to add signal buttons to the correct device group
+	the script component that holds all the signal buttons is uniquely identified as 'script.'+view name
+
 delete buttons with Input Select and button
 
 port python script for reading IR to HA python

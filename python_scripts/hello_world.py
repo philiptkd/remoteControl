@@ -21,9 +21,18 @@ logger.info(entity_id)
 #if there is not already a device with this name
 if('group.' + entity_id not in group_id_list):
     #create remote(script.dummy_panel) entity on button press
-    #panelAttributes = {'entity_id': ('script.dummy_panel',), 'view': 'yes'}
     panelAttributes = {'entity_id': ['script.'+entity_id, 'group.add_signal'], 'view': 'yes'}
     hass.states.set('group.'+entity_id,'hello', attributes=panelAttributes)
+
+    #rename group.add_signal and its parts,
+      # input_text.add_signal_name and script.add_signal_button
+    service_data = {'entity_id': 'group.add_signal', 'view_name': entity_id}
+    hass.services.call('python_script', 'rename', service_data=service_data, blocking=True)
+    newGroupEntityId = 'group.add_signal'+'_'+entity_id
+
+    #put the new group into the view
+    panelAttributes = {'entity_id': ['script.'+entity_id, newGroupEntityId], 'view': 'yes'}
+    hass.states.set('group.'+entity_id, 'hello', attributes=panelAttributes)
 
     #add option input select for deleting devices
     state = hass.states.get('input_select.delete_device_select')
