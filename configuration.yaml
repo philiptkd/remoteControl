@@ -68,9 +68,9 @@ frontend:
 script:
   xxx:
     sequence:
-      service: python_script.hello_world
-      data_template:
-        value: "{{ value }}"
+      - service: python_script.hello_world
+        data_template:
+          value: "{{ value }}"
   dummy_panel:
     sequence:
   print_attributes:
@@ -86,7 +86,6 @@ input_select:
     name: Delete Device
     options:
       - "Select Device to Delete"
-      - "none"
 
 group:
   default_view:

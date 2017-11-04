@@ -6,5 +6,5 @@
 #logger.info(entities)
 
 state = hass.states.get('input_select.delete_device')
-attributes = state.attributes
-logger.info(attributes)
+#attributes = state.attributes
+logger.info(state)

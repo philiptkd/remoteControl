@@ -23,7 +23,11 @@ state = hass.states.get('input_select.delete_device')
 attributes = state.attributes
 attributes['options'].append(entity_id)
 
-hass.states.set('input_select.delete_device', 'Select Device to Delete', attributes=attributes)
+newState = 'Select Device to Delete'
+if(state.state == newState):
+  newState = attributes['options'][1]
+
+hass.states.set('input_select.delete_device', newState, attributes=attributes)
 
 #print to logger
 logger.info("Executing the {0} script.".format(value))
