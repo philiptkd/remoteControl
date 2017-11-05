@@ -91,6 +91,11 @@ script:
       - service: python_script.hello_world
         data_template:
           value: "{{ value }}"
+  signal_button:
+    sequence:
+      - service: python_script.signal_button
+        data_template:
+          value: "{{ value }}"
   dummy_panel:
     sequence:
   print_attributes:
@@ -161,6 +166,6 @@ python_script:
 hello_state:
   
 logger:
-  default: critical
-  logs:
-    homeassistant.components: info
+#  default: critical
+#  logs:
+#    homeassistant.components: info

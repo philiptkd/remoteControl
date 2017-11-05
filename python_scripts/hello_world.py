@@ -20,9 +20,16 @@ logger.info(entity_id)
 
 #if there is not already a device with this name
 if('group.' + entity_id not in group_id_list):
-    #create remote(script.dummy_panel) entity on button press
+    #create empty script entity to hold signal buttons
+    scriptAttr = {}
+    scriptAttr['custom_ui_state_card'] = 'state-card-button-panel'
+    configDict = {'columns': 3, 'cell_height': '75px', 'cell_width': '75px', 'entities': []}
+    scriptAttr['config'] = configDict
+    hass.states.set('script.'+entity_id, 'on', attributes=scriptAttr, force_update=True)
+
+    #create group
     panelAttributes = {'entity_id': ['script.'+entity_id, 'group.add_signal'], 'view': 'yes'}
-    hass.states.set('group.'+entity_id,'hello', attributes=panelAttributes)
+    hass.states.set('group.'+entity_id,'hello', attributes=panelAttributes, force_update=True)
 
     #rename group.add_signal and its parts,
       # input_text.add_signal_name and script.add_signal_button
@@ -32,7 +39,7 @@ if('group.' + entity_id not in group_id_list):
 
     #put the new group into the view
     panelAttributes = {'entity_id': ['script.'+entity_id, newGroupEntityId], 'view': 'yes'}
-    hass.states.set('group.'+entity_id, 'hello', attributes=panelAttributes)
+    hass.states.set('group.'+entity_id, 'hello', attributes=panelAttributes, force_update=True)
 
     #add option input select for deleting devices
     state = hass.states.get('input_select.delete_device_select')

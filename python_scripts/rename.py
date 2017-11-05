@@ -44,5 +44,5 @@ else:
     newAttributes = attributes
 
 #create new entity with edited name/attributes
-hass.states.set(newName, stateStr, attributes=newAttributes)
+hass.states.set(newName, stateStr, attributes=newAttributes, force_update=True)
 
