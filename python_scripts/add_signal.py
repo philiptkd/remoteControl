@@ -29,3 +29,9 @@ if(found_flag == 0):
     newAttributes['config'] = configDict
 
     hass.states.set(container_name, 'on', attributes=newAttributes, force_update=True)
+
+    #add option in input_select.delete_signal_select
+    delState = hass.states.get('input_select.delete_signal_select_'+view_name)
+    delAttributes = delState.attributes
+    delAttributes['options'].append(input_text)
+    hass.states.set('input_select.delete_signal_select_'+view_name, delState.state, attributes=delAttributes, force_update=True)

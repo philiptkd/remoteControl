@@ -46,7 +46,6 @@ homeassistant:
             caption: v
             column: 2
             row: 6
-
             data: {value: bottom}
     script.add_device_button:
       custom_ui_state_card: state-card-button-panel

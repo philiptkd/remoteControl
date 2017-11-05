@@ -2,6 +2,7 @@ TODO
 
 read homeassistant API
 
+give signal buttons unique names via the view name
 create button/signal entity with Input Text and button
 delete buttons with Input Select and button
 

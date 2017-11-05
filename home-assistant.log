@@ -1,19 +1,36 @@
-2017-11-05 21:28:36 WARNING (MainThread) [homeassistant.config] Incomplete core configuration. Auto detected latitude: 32.5151, longitude: -92.6262, name: Ruston, time_zone: America/Chicago, elevation: 91
-2017-11-05 21:28:41 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.108 (auth: True)
-2017-11-05 21:28:42 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
-2017-11-05 21:28:44 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.108 (auth: True)
-2017-11-05 21:32:26 INFO (Thread-11) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-05 21:32:26 INFO (Thread-11) [homeassistant.components.python_script.hello_world.py] ['group.all_scripts', 'group.default_view', 'group.add_signal', 'group.delete_signal', 'group.delete_device', 'group.add_device']
-2017-11-05 21:32:26 INFO (Thread-11) [homeassistant.components.python_script.hello_world.py] remote0
-2017-11-05 21:32:26 INFO (Thread-12) [homeassistant.components.python_script] Executing rename.py: {'view_name': 'remote0', 'entity_id': 'group.add_signal'}
-2017-11-05 21:32:26 INFO (Thread-7) [homeassistant.components.python_script] Executing rename.py: {'view_name': 'remote0', 'entity_id': 'input_text.add_signal_name'}
-2017-11-05 21:32:27 INFO (Thread-13) [homeassistant.components.python_script] Executing rename.py: {'view_name': 'remote0', 'entity_id': 'script.add_signal_button'}
-2017-11-05 21:32:27 INFO (Thread-8) [homeassistant.components.python_script] Executing rename.py: {'view_name': 'remote0', 'entity_id': 'group.delete_signal'}
-2017-11-05 21:32:27 INFO (Thread-14) [homeassistant.components.python_script] Executing rename.py: {'view_name': 'remote0', 'entity_id': 'input_select.delete_signal_select'}
-2017-11-05 21:32:27 INFO (Thread-2) [homeassistant.components.python_script] Executing rename.py: {'view_name': 'remote0', 'entity_id': 'script.delete_signal_button'}
-2017-11-05 21:32:27 INFO (Thread-11) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-05 21:32:30 INFO (Thread-15) [homeassistant.components.python_script] Executing add_signal.py: {'value': 'script.add_signal_button_remote0'}
-2017-11-05 21:32:30 INFO (Thread-15) [homeassistant.components.python_script.add_signal.py] input_text_name: input_text.add_signal_name_remote0
+2017-11-05 22:55:10 WARNING (MainThread) [homeassistant.config] Incomplete core configuration. Auto detected latitude: 32.5151, longitude: -92.6262, name: Ruston, time_zone: America/Chicago, elevation: 91
+2017-11-05 22:55:16 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.108 (auth: True)
+2017-11-05 22:55:16 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
+2017-11-05 22:55:16 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
+2017-11-05 22:55:18 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.108 (auth: True)
+2017-11-05 22:56:26 INFO (Thread-4) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
+2017-11-05 22:56:26 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] ['group.delete_signal', 'group.add_signal', 'group.default_view', 'group.delete_device', 'group.all_scripts', 'group.add_device']
+2017-11-05 22:56:26 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] remote0
+2017-11-05 22:56:26 INFO (Thread-12) [homeassistant.components.python_script] Executing rename.py: {'view_name': 'remote0', 'entity_id': 'group.add_signal'}
+2017-11-05 22:56:26 INFO (Thread-7) [homeassistant.components.python_script] Executing rename.py: {'view_name': 'remote0', 'entity_id': 'input_text.add_signal_name'}
+2017-11-05 22:56:26 INFO (Thread-13) [homeassistant.components.python_script] Executing rename.py: {'view_name': 'remote0', 'entity_id': 'script.add_signal_button'}
+2017-11-05 22:56:26 INFO (Thread-8) [homeassistant.components.python_script] Executing rename.py: {'view_name': 'remote0', 'entity_id': 'group.delete_signal'}
+2017-11-05 22:56:26 INFO (Thread-14) [homeassistant.components.python_script] Executing rename.py: {'view_name': 'remote0', 'entity_id': 'input_select.delete_signal_select'}
+2017-11-05 22:56:26 INFO (Thread-15) [homeassistant.components.python_script] Executing rename.py: {'view_name': 'remote0', 'entity_id': 'script.delete_signal_button'}
+2017-11-05 22:56:26 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
+2017-11-05 22:56:29 INFO (Thread-5) [homeassistant.components.python_script] Executing add_signal.py: {'value': 'script.add_signal_button_remote0'}
+2017-11-05 22:56:29 INFO (Thread-5) [homeassistant.components.python_script.add_signal.py] input_text_name: input_text.add_signal_name_remote0
 input_text: remote0
 container_name: script.remote0
-2017-11-05 21:32:33 INFO (Thread-9) [homeassistant.components.python_script] Executing delete_signal.py: {'value': 'script.delete_signal_button_remote0'}
+2017-11-05 22:56:31 INFO (Thread-16) [homeassistant.components.python_script] Executing signal_button.py: {'value': 'remote0_remote0'}
+2017-11-05 22:56:47 INFO (Thread-9) [homeassistant.components.python_script] Executing delete_signal.py: {'value': 'script.delete_signal_button_remote0'}
+2017-11-05 22:56:47 INFO (Thread-9) [homeassistant.components.python_script.delete_signal.py] 
+
+button name: script.delete_signal_button_remote0
+input select name: input_select.delete_signal_select_remote0
+input text: Select Signal to Delete
+
+
+2017-11-05 22:57:07 INFO (Thread-3) [homeassistant.components.python_script] Executing delete_signal.py: {'value': 'script.delete_signal_button_remote0'}
+2017-11-05 22:57:07 INFO (Thread-3) [homeassistant.components.python_script.delete_signal.py] 
+
+button name: script.delete_signal_button_remote0
+input select name: input_select.delete_signal_select_remote0
+input text: Select Signal to Delete
+
+
