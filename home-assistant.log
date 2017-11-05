@@ -1,30 +1,22 @@
-2017-11-04 23:50:34 WARNING (MainThread) [homeassistant.config] Incomplete core configuration. Auto detected latitude: 32.5151, longitude: -92.6262, name: Ruston, time_zone: America/Chicago, elevation: 91
-2017-11-04 23:50:40 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
-2017-11-04 23:50:40 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.108 (auth: True)
-2017-11-04 23:50:40 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
-2017-11-04 23:50:42 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.108 (auth: True)
-2017-11-04 23:50:44 INFO (Thread-4) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 23:50:44 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] ['group.default_view', 'group.add_device', 'group.add_signal', 'group.delete_device', 'group.all_scripts']
-2017-11-04 23:50:44 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] remote0
-2017-11-04 23:50:45 INFO (Thread-12) [homeassistant.components.python_script] Executing rename.py: {'entity_id': 'group.add_signal', 'view_name': 'remote0'}
-2017-11-04 23:50:45 INFO (Thread-7) [homeassistant.components.python_script] Executing rename.py: {'entity_id': 'input_text.add_signal_name', 'view_name': 'remote0'}
-2017-11-04 23:50:45 INFO (Thread-3) [homeassistant.components.python_script] Executing rename.py: {'entity_id': 'script.add_signal_button', 'view_name': 'remote0'}
-2017-11-04 23:50:45 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-04 23:50:47 INFO (Thread-13) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 23:50:47 INFO (Thread-13) [homeassistant.components.python_script.hello_world.py] ['group.default_view', 'group.add_device', 'group.add_signal_remote0', 'group.remote0', 'group.add_signal', 'group.delete_device', 'group.all_scripts']
-2017-11-04 23:50:47 INFO (Thread-13) [homeassistant.components.python_script.hello_world.py] remote0
-2017-11-04 23:50:47 INFO (Thread-13) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-04 23:50:50 INFO (Thread-14) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 23:50:50 INFO (Thread-14) [homeassistant.components.python_script.hello_world.py] ['group.default_view', 'group.add_device', 'group.add_signal_remote0', 'group.remote0', 'group.add_signal', 'group.delete_device', 'group.all_scripts']
-2017-11-04 23:50:50 INFO (Thread-14) [homeassistant.components.python_script.hello_world.py] remote1
-2017-11-04 23:50:51 INFO (Thread-2) [homeassistant.components.python_script] Executing rename.py: {'entity_id': 'group.add_signal', 'view_name': 'remote1'}
-2017-11-04 23:50:51 INFO (Thread-15) [homeassistant.components.python_script] Executing rename.py: {'entity_id': 'input_text.add_signal_name', 'view_name': 'remote1'}
-2017-11-04 23:50:51 INFO (Thread-9) [homeassistant.components.python_script] Executing rename.py: {'entity_id': 'script.add_signal_button', 'view_name': 'remote1'}
-2017-11-04 23:50:51 INFO (Thread-14) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
-2017-11-04 23:50:56 INFO (Thread-16) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
-2017-11-04 23:50:56 INFO (Thread-16) [homeassistant.components.python_script.hello_world.py] ['group.add_device', 'group.remote1', 'group.default_view', 'group.remote0', 'group.add_signal', 'group.add_signal_remote0', 'group.delete_device', 'group.add_signal_remote1', 'group.all_scripts']
-2017-11-04 23:50:56 INFO (Thread-16) [homeassistant.components.python_script.hello_world.py] remote2
-2017-11-04 23:50:56 INFO (Thread-8) [homeassistant.components.python_script] Executing rename.py: {'entity_id': 'group.add_signal', 'view_name': 'remote2'}
-2017-11-04 23:50:56 INFO (Thread-17) [homeassistant.components.python_script] Executing rename.py: {'entity_id': 'input_text.add_signal_name', 'view_name': 'remote2'}
-2017-11-04 23:50:56 INFO (Thread-10) [homeassistant.components.python_script] Executing rename.py: {'entity_id': 'script.add_signal_button', 'view_name': 'remote2'}
-2017-11-04 23:50:56 INFO (Thread-16) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
+2017-11-05 01:25:09 WARNING (MainThread) [homeassistant.config] Incomplete core configuration. Auto detected latitude: 32.5151, longitude: -92.6262, name: Ruston, time_zone: America/Chicago, elevation: 91
+2017-11-05 01:25:13 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.107 (auth: True)
+2017-11-05 01:25:14 INFO (MainThread) [homeassistant.components.http] Serving / to 192.168.0.108 (auth: True)
+2017-11-05 01:25:15 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
+2017-11-05 01:25:15 INFO (MainThread) [homeassistant.components.http] Serving /api/websocket to 192.168.0.108 (auth: True)
+2017-11-05 01:25:16 INFO (MainThread) [homeassistant.components.http] Serving /api/themes to 192.168.0.108 (auth: True)
+2017-11-05 01:25:19 INFO (Thread-4) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
+2017-11-05 01:25:19 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] ['group.add_signal', 'group.add_device', 'group.all_scripts', 'group.delete_device', 'group.default_view']
+2017-11-05 01:25:19 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] remote0
+2017-11-05 01:25:19 INFO (Thread-12) [homeassistant.components.python_script] Executing rename.py: {'entity_id': 'group.add_signal', 'view_name': 'remote0'}
+2017-11-05 01:25:19 INFO (Thread-7) [homeassistant.components.python_script] Executing rename.py: {'entity_id': 'input_text.add_signal_name', 'view_name': 'remote0'}
+2017-11-05 01:25:19 INFO (Thread-3) [homeassistant.components.python_script] Executing rename.py: {'entity_id': 'script.add_signal_button', 'view_name': 'remote0'}
+2017-11-05 01:25:19 INFO (Thread-4) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
+2017-11-05 01:25:26 INFO (Thread-13) [homeassistant.components.python_script] Executing hello_world.py: {'value': 'add_device'}
+2017-11-05 01:25:26 INFO (Thread-13) [homeassistant.components.python_script.hello_world.py] ['group.add_signal', 'group.add_signal_remote0', 'group.add_device', 'group.all_scripts', 'group.delete_device', 'group.default_view', 'group.remote0']
+2017-11-05 01:25:26 INFO (Thread-13) [homeassistant.components.python_script.hello_world.py] remote1
+2017-11-05 01:25:26 INFO (Thread-14) [homeassistant.components.python_script] Executing rename.py: {'entity_id': 'group.add_signal', 'view_name': 'remote1'}
+2017-11-05 01:25:26 INFO (Thread-15) [homeassistant.components.python_script] Executing rename.py: {'entity_id': 'input_text.add_signal_name', 'view_name': 'remote1'}
+2017-11-05 01:25:26 INFO (Thread-2) [homeassistant.components.python_script] Executing rename.py: {'entity_id': 'script.add_signal_button', 'view_name': 'remote1'}
+2017-11-05 01:25:26 INFO (Thread-13) [homeassistant.components.python_script.hello_world.py] Executing the add_device script.
+2017-11-05 01:26:06 INFO (Thread-16) [homeassistant.components.python_script] Executing add_signal.py: {'value': 'script.add_signal_button_remote0'}
+2017-11-05 01:26:07 INFO (Thread-9) [homeassistant.components.python_script] Executing add_signal.py: {'value': 'script.add_signal_button_remote1'}

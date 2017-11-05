@@ -113,7 +113,7 @@ script:
     sequence:
       service: python_script.add_signal
       data_template:
-        value: '{{ states.input_text.add_signal_name.state }}'
+        value: '{{ value }}'
 
 input_select:
   delete_device_select:
