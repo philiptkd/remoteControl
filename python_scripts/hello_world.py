@@ -28,17 +28,22 @@ if('group.' + entity_id not in group_id_list):
     hass.states.set('script.'+entity_id, 'on', attributes=scriptAttr, force_update=True)
 
     #create group
-    panelAttributes = {'entity_id': ['script.'+entity_id, 'group.add_signal'], 'view': 'yes'}
+    panelAttributes = {'entity_id': ['script.'+entity_id, 'group.add_signal', 'group.delete_signal'], 'view': 'yes'}
     hass.states.set('group.'+entity_id,'hello', attributes=panelAttributes, force_update=True)
 
     #rename group.add_signal and its parts,
       # input_text.add_signal_name and script.add_signal_button
     service_data = {'entity_id': 'group.add_signal', 'view_name': entity_id}
     hass.services.call('python_script', 'rename', service_data=service_data, blocking=True)
-    newGroupEntityId = 'group.add_signal'+'_'+entity_id
+    newAddSignalGroupId = 'group.add_signal'+'_'+entity_id
+    #rename group.delete_signal and its parts,
+      #input_select.delete_signal_select and script.delete_signal_button
+    service_data = {'entity_id': 'group.delete_signal', 'view_name': entity_id}
+    hass.services.call('python_script', 'rename', service_data=service_data, blocking=True)
+    newDeleteSignalGroupId = 'group.delete_signal'+'_'+entity_id
 
-    #put the new group into the view
-    panelAttributes = {'entity_id': ['script.'+entity_id, newGroupEntityId], 'view': 'yes'}
+    #put the new groups into the view
+    panelAttributes = {'entity_id': ['script.'+entity_id, newAddSignalGroupId, newDeleteSignalGroupId], 'view': 'yes'}
     hass.states.set('group.'+entity_id, 'hello', attributes=panelAttributes, force_update=True)
 
     #add option input select for deleting devices

@@ -46,6 +46,7 @@ homeassistant:
             caption: v
             column: 2
             row: 6
+
             data: {value: bottom}
     script.add_device_button:
       custom_ui_state_card: state-card-button-panel
@@ -70,13 +71,23 @@ homeassistant:
     script.add_signal_button:
       custom_ui_state_card: state-card-button-panel
       config:
-        colums: 1
+        columns: 1
         cell_height: 75px
         cell_width: 460px
         entities:
           - entity: script.add_signal
             caption: Add Signal
             data: {value: add_signal}
+    script.delete_signal_button:
+      custom_ui_state_card: state-card-button-panel
+      config:
+        columns: 1
+        cell_height: 75px
+        cell_width: 460px
+        entities:
+          - entity: script.delete_signal
+            caption: Delete Signal
+            data: {value: delete_signal}
 
 http:
 #  api_password: !secret http_password
@@ -119,12 +130,23 @@ script:
       service: python_script.add_signal
       data_template:
         value: '{{ value }}'
+  delete_signal_button:
+    sequence:
+  delete_signal:
+    sequence:
+      service: python_script.delete_signal
+      data_template:
+        value: '{{ value }}'
 
 input_select:
   delete_device_select:
     name: Devices
     options:
       - "Select Device to Delete"
+  delete_signal_select:
+    name: Signals
+    options:
+      - "Select Signal to Delete"
 
 input_text:
   add_device_name:
@@ -142,6 +164,11 @@ group:
     entities:
       - input_text.add_signal_name
       - script.add_signal_button
+  delete_signal:
+    name: Delete Signal
+    entities:
+      - input_select.delete_signal_select
+      - script.delete_signal_button
   add_device:
     name: Add Device
     entities:
@@ -166,6 +193,6 @@ python_script:
 hello_state:
   
 logger:
-#  default: critical
-#  logs:
-#    homeassistant.components: info
+  default: critical
+  logs:
+    homeassistant.components: info
