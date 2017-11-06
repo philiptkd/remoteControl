@@ -1,8 +1,8 @@
 add_signal_button_name = data.get('value')
 view_name = add_signal_button_name[len('script.add_signal_button_'):]
 input_text_name = 'input_text.add_signal_name_'+view_name
-input_text = hass.states.get('input_text.add_device_name').state
-#input_text = hass.states.get(input_text_name).state
+#input_text = hass.states.get('input_text.add_device_name').state
+input_text = hass.states.get(input_text_name).state
 
 container_name = 'script.'+view_name
 attributes = hass.states.get(container_name).attributes
