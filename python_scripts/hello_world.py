@@ -44,7 +44,7 @@ if('group.' + entity_id not in group_id_list):
 
     #put the new groups into the view
     panelAttributes = {'entity_id': ['script.'+entity_id, newAddSignalGroupId, newDeleteSignalGroupId], 'view': 'yes'}
-#    hass.states.set('group.'+entity_id, 'hello', attributes=panelAttributes, force_update=True)
+    hass.states.set('group.'+entity_id, 'hello', attributes=panelAttributes, force_update=True)
 
     #add option input select for deleting devices
     state = hass.states.get('input_select.delete_device_select')
